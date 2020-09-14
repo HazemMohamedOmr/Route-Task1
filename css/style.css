@@ -1,7 +1,137 @@
 /* Hazem Section Start */
 
-.spans{
-    color: red;
+@media screen and (min-width: 992px)  and (max-width: 1199px){
+    .blog .post-desc a{
+        font-size: 1.24rem;
+    }
+}
+
+@media screen and (min-width: 768px)  and (max-width: 991px){
+    .blog .fix{
+        margin-top: 5px;
+    }
+}
+
+@media screen and (min-width: 576px)  and (max-width: 767px){
+    .blog .post{
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 0px)  and (max-width: 575px){
+    .blog .post{
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+.blog{
+    background-color: #f5f5f5;
+    color: #4e4e4e;
+}
+
+.blog h1, .blog h2, .blog h3, .blog h5, .blog h6{
+    color: #1e1e1e;
+}
+
+.blog ul, .blog ol{
+    padding-left: 0;
+    list-style: none;
+}
+
+.blog a:hover{
+    color: none;
+    text-decoration: none;
+}
+
+.blog .title-box{
+    margin-bottom: 4rem;
+}
+
+.blog .title{
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase
+}
+
+.blog .title-box p{
+    position: relative;
+}
+
+.blog .title-box p::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -22px;
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+}
+
+.blog .post{
+    background-color: #fff;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+.blog .post-overlay{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 6px 15px;
+    overflow: hidden;
+    background-color: #0078ff;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: .7rem;
+    color: #fff;
+}
+
+.blog .post-desc{
+    border-left: 1px solid rgba(0,0,0,.125);
+    border-right: 1px solid rgba(0,0,0,.125);
+}
+
+.blog .post-desc a{
+    color: #1e1e1e;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+}
+
+.blog .post-desc a:hover{
+    color: #0078ff;
+}
+
+.blog .post-footer .row{
+    margin: 0;
+}
+
+.blog .foot-cont{
+    border: 1px solid rgba(0,0,0,.125);
+    background-color: rgba(0,0,0,.03);
+    padding: .75rem 1rem;
+}
+
+.blog .foot-cont .anch{
+    color: #1e1e1e;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+}
+
+.blog .foot-cont .anch:hover{
+    color: #0078ff;
+}
+
+.blog .foot-cont .foot-img{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+
+.blog .foot-cont .col-3, .blog .foot-cont .col-8{
+    padding: 0;
 }
 
 /* Hazem Section End */
