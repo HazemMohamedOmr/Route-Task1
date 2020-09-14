@@ -237,7 +237,6 @@ body {
 .svgDiv
 {
     width: 100%;
-    height: 80vh;
     background-color: #0099FF;
     background: linear-gradient(90deg , #0099FF , #ddd);
 }
