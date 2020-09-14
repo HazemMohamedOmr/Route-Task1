@@ -138,6 +138,95 @@
 
 
 
+/* Ezz Section start */
+
+
+body {
+    font-family: 'segoe ui light';
+}
+
+.item {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.item-desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translateY(-50%) translateX(-50%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.item:hover .item-desc {
+    opacity: 1;
+}
+
+#lightboxContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999;
+}
+
+#lightboxBg{
+    position: absolute;
+    z-index: 0;
+    width: 100% !important;
+    height: 100%;
+}
+
+#lightboxitem {
+    position: relative;
+    background-image: url(../img/portfolio/1.jpg);
+    background-size: 100% 100%;
+    width: 40%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    z-index: 50;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+#lightboxitem i {
+    font-size: 22px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+#lightboxitem i:hover{
+    color: red;
+    font-size: 25px;
+}
+
+
+
+/* Ezz Section End */
+
+
+
+
 /* Assem Section Start */
 
 .my-p
