@@ -246,3 +246,72 @@ body {
 }
 
 /* Assem Section End */
+
+/* Essam Section Start */
+.cont2
+{
+    position: relative;
+}
+.cont2 p
+{
+    padding-bottom: 20px;
+}
+.cont2::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+    right: 48%;
+    border: 2px solid #0078ff;
+    
+}
+
+.cont2 h3
+{
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+
+.brdr
+{
+    border: 10px solid #f5f5f5;
+    padding: 50px 30px;
+    border-radius: 30px;
+}
+.brdr i
+{
+    height: 120px;
+    width: 120px;
+    font-size: 2rem;
+    border-radius: 100%;
+    line-height: 1.5;
+    padding-top: 25px;
+    border: 10px solid  #0078ff;
+    transition: 0.5s;
+   
+}
+.brdr i:hover
+{
+    border: 8px solid lightblue;
+    background-color: #0078ff;
+    color: white;
+}
+
+.brdr h2
+{
+    font-size: 22;
+    color: #1e1e1e;
+    padding: 10px 0px;
+    font-weight: 600;
+}
+.brdr p
+{
+    color: #4e4e4e;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size:16 ;
+}
+/* Essam Section End */
