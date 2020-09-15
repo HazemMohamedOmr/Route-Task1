@@ -52,3 +52,82 @@ document.addEventListener("keydown",function(eventInfo){
         closeLightbox()
     }
 })
+
+
+/* Seif start */
+
+var images = Array.from(document.querySelectorAll(".portfolioImage"));
+var grayLayer = document.querySelector(".grayLayer");
+var background = document.querySelector(".background");
+var after = document.getElementById("nextImage");
+var before = document.getElementById("prevImage");
+var close = document.getElementById("closeLayer");
+var index;
+
+for(var i = 0; i < images.length; i++)
+{
+    images[i].addEventListener("click", displayLayer);
+}
+
+function displayLayer(e)
+{
+    var imageAddress = e.target.src;
+    background.style.backgroundImage = `url(${imageAddress})`;
+    grayLayer.style.display = "flex";
+    $("html , body").css("overflow" , "hidden");
+    index = images.indexOf(e.target);
+}
+
+close.addEventListener("click", colseLayer);
+
+function colseLayer()
+{
+    grayLayer.style.display = "none";
+    $("html , body").css("overflow" , "auto");
+}
+
+after.addEventListener("click", next);
+
+function next()
+{
+    index++;
+    if(index >=images.length)
+    {
+        index = 0;
+    }
+    var nextPhoto = images[index].src
+    background.style.backgroundImage = `url(${nextPhoto})`;
+}
+
+before.addEventListener("click", previous)
+
+function previous()
+{
+    index--;
+    if(index < 0)
+    {
+        index = images.length - 1;
+    }
+    var previousPhoto = images[index].src;
+    background.style.backgroundImage = `url(${previousPhoto})`;
+}
+
+document.addEventListener("keyup" , keyboard)
+
+function keyboard(e)
+{
+  if(e.keyCode == 39)
+  {
+    next()
+  }
+  else if(e.keyCode == 37)
+  {
+    previous()
+  }
+  else if(e.keyCode == 27)
+  {
+    remove();
+  }
+}
+
+/* Seif end */
